@@ -1,4 +1,4 @@
-package com.capg.movieTicketBookingSystem.Dao;
+package com.capg.movieTicketBookingSystem;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
