@@ -4,7 +4,6 @@ import java.util.List;
 
 public class Show {
 	
-	
 	private int showId;
 	private int showStartTime;
 	private int showEndTime;

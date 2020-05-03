@@ -12,8 +12,7 @@ public class Movie {
 	//private String movieGenre;
 	//private int movieLength;
 	
-	
-	
+
 	public Movie() {
 	}
 	
