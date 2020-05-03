@@ -8,7 +8,6 @@ public class Seat {
 	private double seatPrice;
 	
 	public Seat() {
-		
 	}
 
 	public Seat(int seatId, BookingState seatStatus, double seatPrice) {
