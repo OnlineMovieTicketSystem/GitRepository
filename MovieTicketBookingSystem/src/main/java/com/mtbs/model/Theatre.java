@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Theatre {
 
-	private Integer id;
+	private int id;
 	private String name;
 	private String city;
 	private List<Movie> listOfMovies;
@@ -13,11 +13,10 @@ public class Theatre {
 	private String managerContact;
 
 	public Theatre() {
-		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 
-	public Theatre(Integer id, String name, String city, List<Movie> listOfMovies, List<Screen> listOfScreens,
+	public Theatre(int id, String name, String city, List<Movie> listOfMovies, List<Screen> listOfScreens,
 			String managerName, String managerContact) {
 		super();
 		this.id = id;
@@ -29,11 +28,11 @@ public class Theatre {
 		this.managerContact = managerContact;
 	}
 
-	public Integer getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

@@ -3,6 +3,7 @@ package com.mtbs.model;
 import java.util.List;
 
 public class Ticket {
+	
 	private int ticketId;
 	private int noOfSeats;
 	private List<Seat> seatName;
