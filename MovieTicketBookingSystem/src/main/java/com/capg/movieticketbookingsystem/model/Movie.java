@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 
 public class Movie {
+	
 	private int MovieId;
 	private String movieName;
 	private String movieDirector;
