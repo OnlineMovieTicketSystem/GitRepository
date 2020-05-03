@@ -1,4 +1,4 @@
-package com.capg.movieticketbookingsystem.dao;
+package com.mtbs.dao;
 
 public class ExampleDaoImpl implements ExampleDao {
 

@@ -1,4 +1,4 @@
-package com.capg.movieticketbookingsystem.service;
+package com.mtbs.service;
 
 public class ExampleServiceImpl implements ExampleService {
 
