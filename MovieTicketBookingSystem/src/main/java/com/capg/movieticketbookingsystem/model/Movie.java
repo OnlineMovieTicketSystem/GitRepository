@@ -13,6 +13,7 @@ public class Movie {
 	//private int movieLength;
 	
 	
+	
 	public Movie() {
 	}
 	
