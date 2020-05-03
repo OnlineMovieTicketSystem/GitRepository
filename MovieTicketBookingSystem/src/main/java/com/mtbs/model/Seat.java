@@ -1,12 +1,11 @@
 package com.mtbs.model;
 
-
 public class Seat {
 
 	private int seatId;
 	private BookingState seatStatus;
 	private double seatPrice;
-	
+
 	public Seat() {
 	}
 

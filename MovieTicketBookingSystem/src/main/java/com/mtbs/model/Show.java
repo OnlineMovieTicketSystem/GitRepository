@@ -8,14 +8,13 @@ public class Show {
 	private int availableSeats;
 	private Movie movieName;
 	private Screen screenId;
-	private Theater theaterId;
-	
+	private Theatre theatreId;
+
 	public Show() {
 	}
-	
 
 	public Show(int id, String name, int startTime, int endTime, int availableSeats, Movie movieName, Screen screenId,
-			Theater theaterId) {
+			Theatre theatreId) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -24,9 +23,8 @@ public class Show {
 		this.availableSeats = availableSeats;
 		this.movieName = movieName;
 		this.screenId = screenId;
-		this.theaterId = theaterId;
+		this.theatreId = theatreId;
 	}
-
 
 	public int getId() {
 		return id;
@@ -84,20 +82,19 @@ public class Show {
 		this.screenId = screenId;
 	}
 
-	public Theater getTheaterId() {
-		return theaterId;
+	public Theatre getTheatreId() {
+		return theatreId;
 	}
 
-	public void setTheaterId(Theater theaterId) {
-		this.theaterId = theaterId;
+	public void setTheaterId(Theatre theatreId) {
+		this.theatreId = theatreId;
 	}
 
 	@Override
 	public String toString() {
 		return "Show [id=" + id + ", name=" + name + ", startTime=" + startTime + ", endTime=" + endTime
 				+ ", availableSeats=" + availableSeats + ", movieName=" + movieName + ", screenId=" + screenId
-				+ ", theaterId=" + theaterId + "]";
+				+ ", theaterId=" + theatreId + "]";
 	}
-	
 
 }

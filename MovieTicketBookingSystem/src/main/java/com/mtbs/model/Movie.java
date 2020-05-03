@@ -3,16 +3,16 @@ package com.mtbs.model;
 import java.util.Date;
 
 public class Movie {
-	
+
 	private int id;
 	private String name;
 	private String director;
 	private String language;
 	private Date releaseDate;
-	
+
 	public Movie() {
 	}
-	
+
 	public Movie(int id, String name, String director, String language, Date releaseDate) {
 		super();
 		this.id = id;
@@ -21,7 +21,6 @@ public class Movie {
 		this.language = language;
 		this.releaseDate = releaseDate;
 	}
-
 
 	public int getId() {
 		return id;
@@ -62,6 +61,7 @@ public class Movie {
 	public void setReleaseDate(Date releaseDate) {
 		this.releaseDate = releaseDate;
 	}
+
 	@Override
 	public String toString() {
 		return "Movie [id=" + id + ", name=" + name + ", director=" + director + ", language=" + language

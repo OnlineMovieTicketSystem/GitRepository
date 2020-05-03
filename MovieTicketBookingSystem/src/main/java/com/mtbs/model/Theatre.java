@@ -3,15 +3,15 @@ package com.mtbs.model;
 import java.util.List;
 
 public class Theatre {
-		
+
 	private Integer id;
 	private String name;
 	private String city;
 	private List<Movie> listOfMovies;
-    private List<Screen> listOfScreens;
-    private String managerName;
+	private List<Screen> listOfScreens;
+	private String managerName;
 	private String managerContact;
-	
+
 	public Theatre() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -91,7 +91,5 @@ public class Theatre {
 				+ ", listOfScreens=" + listOfScreens + ", managerName=" + managerName + ", managerContact="
 				+ managerContact + "]";
 	}
-	
-
 
 }

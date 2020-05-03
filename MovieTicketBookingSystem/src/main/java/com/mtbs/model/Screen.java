@@ -1,17 +1,16 @@
 package com.mtbs.model;
 
+import java.util.Date;
 import java.util.List;
 
-import sun.util.calendar.BaseCalendar.Date;
-
 public class Screen {
-		
+
 	private Integer id;
 	private Theatre theatre;
 	private String name;
 	private List<Show> show;
 	private Date movieEndDate;
-	
+
 	public Screen() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -72,5 +71,4 @@ public class Screen {
 				+ movieEndDate + "]";
 	}
 
-	
 }

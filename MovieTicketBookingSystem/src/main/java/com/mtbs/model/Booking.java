@@ -6,18 +6,17 @@ import java.util.List;
 public class Booking {
 
 	private int bookingId;
-	private  Show show;
+	private Show show;
 	private LocalDate bookingDate;
 	private double totalCost;
 	private List<Seat> seatList;
 	private Ticket ticket;
-	
-	public Booking() {
-		
-	}
 
-	public Booking(int bookingId, Show show, LocalDate bookingDate, double totalCost,
-			List<Seat> seatList, Ticket ticket) {
+	public Booking() {
+
+	}
+	public Booking(int bookingId, Show show, LocalDate bookingDate, double totalCost, List<Seat> seatList,
+			Ticket ticket) {
 		super();
 		this.bookingId = bookingId;
 		this.show = show;
@@ -66,8 +65,5 @@ public class Booking {
 	public void setTicket(Ticket ticket) {
 		this.ticket = ticket;
 	}
-	
-	
-	
+
 }
-   
