@@ -8,7 +8,7 @@ public class Customer {
 	private String name;
 	private String password;
 	private LocalDate dateOfBirth;
-	private List<Ticket> tickets;
+	private List<Ticket> ticket;
 	private String contact;
 	
 	public Customer() {
@@ -21,7 +21,7 @@ public class Customer {
 		this.name = name;
 		this.password = password;
 		this.dateOfBirth = dateOfBirth;
-		this.tickets = tickets;
+		this.ticket = tickets;
 		this.contact = contact;
 	}
 
@@ -58,11 +58,11 @@ public class Customer {
 	}
 
 	public List<Ticket> getTickets() {
-		return tickets;
+		return ticket;
 	}
 
 	public void setTickets(List<Ticket> tickets) {
-		this.tickets = tickets;
+		this.ticket = tickets;
 	}
 
 	public String getContact() {
@@ -76,7 +76,7 @@ public class Customer {
 	@Override
 	public String toString() {
 		return "Customer [id=" + id + ", name=" + name + ", password=" + password + ", dateOfBirth=" + dateOfBirth
-				+ ", tickets=" + tickets + ", contact=" + contact + "]";
+				+ ", ticket=" + ticket + ", contact=" + contact + "]";
 	}
 	
 
