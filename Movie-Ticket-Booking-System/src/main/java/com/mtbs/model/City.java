@@ -8,11 +8,8 @@ public class City {
 	private String name;
 	private List<Theatre> theatres;
 	
-
 	public City() {
-	}
-	
-	
+	}	
 
 	public City(int id, String name, List<Theatre> theatres) {
 		super();
