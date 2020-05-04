@@ -1,15 +1,15 @@
 package com.mtbs.model;
 
 public class Admin {
-	private String id;
+	private int id;
 	private String name;
 	private String password;
-	private String contact;
+	private long contact;
 
 	public Admin() {
 	}
 
-	public Admin(String id, String name, String password, String contact) {
+	public Admin(int id, String name, String password, long contact) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -17,11 +17,11 @@ public class Admin {
 		this.contact = contact;
 	}
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -41,11 +41,11 @@ public class Admin {
 		this.password = password;
 	}
 
-	public String getContact() {
+	public long getContact() {
 		return contact;
 	}
 
-	public void setContact(String contact) {
+	public void setContact(long contact) {
 		this.contact = contact;
 	}
 

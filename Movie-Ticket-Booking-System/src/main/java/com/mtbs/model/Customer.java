@@ -1,20 +1,19 @@
 package com.mtbs.model;
 
 import java.time.LocalDate;
-import java.util.List;
 
 public class Customer {
 	private int id;
 	private String name;
 	private String password;
 	private LocalDate dateOfBirth;
-	private String contact;
+	private long contact;
 	
 	public Customer() {
 	}
 	
 	public Customer(int id, String name, String password, LocalDate dateOfBirth,
-			String contact) {
+			long contact) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -55,11 +54,11 @@ public class Customer {
 		this.dateOfBirth = dateOfBirth;
 	}
 
-	public String getContact() {
+	public long getContact() {
 		return contact;
 	}
 
-	public void setContact(String contact) {
+	public void setContact(long contact) {
 		this.contact = contact;
 	}
 
