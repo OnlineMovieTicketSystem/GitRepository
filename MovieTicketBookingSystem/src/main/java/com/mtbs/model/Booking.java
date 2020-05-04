@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Booking {
 
-	private int bookingId;
+	private int id;
 	private Show show;
 	private LocalDate bookingDate;
 	private double totalCost;
@@ -15,10 +15,11 @@ public class Booking {
 	public Booking() {
 
 	}
-	public Booking(int bookingId, Show show, LocalDate bookingDate, double totalCost, List<Seat> seatList,
+
+	public Booking(int id, Show show, LocalDate bookingDate, double totalCost, List<Seat> seatList,
 			Ticket ticket) {
 		super();
-		this.bookingId = bookingId;
+		this.id = id;
 		this.show = show;
 		this.bookingDate = bookingDate;
 		this.totalCost = totalCost;
@@ -26,12 +27,12 @@ public class Booking {
 		this.ticket = ticket;
 	}
 
-	public int getBookingId() {
-		return bookingId;
+	public int getId() {
+		return id;
 	}
 
-	public void setBookingId(int bookingId) {
-		this.bookingId = bookingId;
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public LocalDate getBookingDate() {
@@ -65,5 +66,12 @@ public class Booking {
 	public void setTicket(Ticket ticket) {
 		this.ticket = ticket;
 	}
+
+	@Override
+	public String toString() {
+		return "Booking [id=" + id + ", show=" + show + ", bookingDate=" + bookingDate + ", totalCost=" + totalCost
+				+ ", seatList=" + seatList + ", ticket=" + ticket + "]";
+	}
+	
 
 }

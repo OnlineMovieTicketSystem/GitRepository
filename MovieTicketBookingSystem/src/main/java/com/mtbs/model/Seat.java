@@ -2,26 +2,26 @@ package com.mtbs.model;
 
 public class Seat {
 
-	private int seatId;
+	private int id;
 	private BookingState seatStatus;
-	private double seatPrice;
+	private double price;
 
 	public Seat() {
 	}
 
-	public Seat(int seatId, BookingState seatStatus, double seatPrice) {
+	public Seat(int id, BookingState seatStatus, double price) {
 		super();
-		this.seatId = seatId;
+		this.id = id;
 		this.seatStatus = seatStatus;
-		this.seatPrice = seatPrice;
+		this.price = price;
 	}
 
-	public int getSeatId() {
-		return seatId;
+	public int getId() {
+		return id;
 	}
 
-	public void setSeatId(int seatId) {
-		this.seatId = seatId;
+	public void setId(int seatId) {
+		this.id = seatId;
 	}
 
 	public BookingState getSeatStatus() {
@@ -32,11 +32,17 @@ public class Seat {
 		this.seatStatus = seatStatus;
 	}
 
-	public double getSeatPrice() {
-		return seatPrice;
+	public double getPrice() {
+		return price;
 	}
 
-	public void setSeatPrice(double seatPrice) {
-		this.seatPrice = seatPrice;
+	public void setPrice(double price) {
+		this.price = price;
 	}
+
+	@Override
+	public String toString() {
+		return "Seat [id=" + id + ", seatStatus=" + seatStatus + ", price=" + price + "]";
+	}
+	
 }

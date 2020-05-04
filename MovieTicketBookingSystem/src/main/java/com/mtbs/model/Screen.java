@@ -6,19 +6,19 @@ import java.util.List;
 public class Screen {
 
 	private int id;
-	private Theatre theatreId;
 	private String name;
+	private Theatre theatreId;
 	private List<Show> show;
 	private Date movieEndDate;
 
 	public Screen() {
 	}
 
-	public Screen(int id, Theatre theatre, String name, List<Show> show, Date movieEndDate) {
+	public Screen(int id, String name, Theatre theatre,List<Show> show, Date movieEndDate) {
 		super();
 		this.id = id;
-		this.theatreId = theatre;
 		this.name = name;
+		this.theatreId = theatre;
 		this.show = show;
 		this.movieEndDate = movieEndDate;
 	}
@@ -36,7 +36,7 @@ public class Screen {
 	}
 
 	public void setTheatre(Theatre theatre) {
-		this.theatreId= theatre;
+		this.theatreId = theatre;
 	}
 
 	public String getName() {
@@ -65,7 +65,7 @@ public class Screen {
 
 	@Override
 	public String toString() {
-		return "Screen [id=" + id + ", theatre=" + theatreId + ", name=" + name + ", show=" + show + ", movieEndDate="
+		return "Screen [id=" + id + ", name=" + name + ", theatre=" + theatreId + ", show=" + show + ", movieEndDate="
 				+ movieEndDate + "]";
 	}
 

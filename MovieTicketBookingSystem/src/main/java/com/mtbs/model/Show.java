@@ -1,7 +1,7 @@
 package com.mtbs.model;
 
 public class Show {
-	
+
 	private int id;
 	private String name;
 	private int startTime;

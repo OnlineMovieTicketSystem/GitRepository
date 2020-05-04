@@ -1,52 +1,57 @@
 package com.mtbs.model;
 
 public class Admin {
-	private String adminId;
-	private String adminName;
-	private String adminPassword;
-	private String adminContact;
-	
+	private String id;
+	private String name;
+	private String password;
+	private String contact;
+
 	public Admin() {
-		
-	}
-	
-	public Admin(String adminId, String adminName, String adminPassword, String adminContact) {
-		this.adminId=adminId;
-		this.adminName=adminName;
-		this.adminPassword=adminPassword;
-		this.adminContact=adminContact;
 	}
 
-	public String getAdminId() {
-		return adminId;
+	public Admin(String id, String name, String password, String contact) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.password = password;
+		this.contact = contact;
 	}
 
-	public void setAdminId(String adminId) {
-		this.adminId = adminId;
+	public String getId() {
+		return id;
 	}
 
-	public String getAdminName() {
-		return adminName;
+	public void setId(String id) {
+		this.id = id;
 	}
 
-	public void setAdminName(String adminName) {
-		this.adminName = adminName;
+	public String getName() {
+		return name;
 	}
 
-	public String getAdminPassword() {
-		return adminPassword;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public void setAdminPassword(String adminPassword) {
-		this.adminPassword = adminPassword;
+	public String getPassword() {
+		return password;
 	}
 
-	public String getAdminContact() {
-		return adminContact;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
-	public void setAdminContact(String adminContact) {
-		this.adminContact = adminContact;
+	public String getContact() {
+		return contact;
 	}
-	
-}
+
+	public void setContact(String contact) {
+		this.contact = contact;
+	}
+
+	@Override
+	public String toString() {
+		return "Admin [id=" + id + ", name=" + name + ", password=" + password + ", contact=" + contact + "]";
+	}
+
+	}

@@ -3,30 +3,30 @@ package com.mtbs.model;
 import java.util.List;
 
 public class Ticket {
-	
-	private int ticketId;
+
+	private int id;
 	private int noOfSeats;
 	private List<Seat> seatName;
-	private Theatre theatre;
+	private Screen screen;
 
 	public Ticket() {
 
 	}
 
-	public Ticket(int ticketId, int noOfSeats, List<Seat> seatName, String screenName, Theatre theatre) {
+	public Ticket(int id, int noOfSeats, List<Seat> seatName, String screenName, Screen screen) {
 		super();
-		this.ticketId = ticketId;
+		this.id = id;
 		this.noOfSeats = noOfSeats;
 		this.seatName = seatName;
-		this.theatre = theatre;
+		this.setScreen(screen);
 	}
 
-	public int getTicketId() {
-		return ticketId;
+	public int getId() {
+		return id;
 	}
 
-	public void setTicketId(int ticketId) {
-		this.ticketId = ticketId;
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public int getNoOfSeats() {
@@ -45,11 +45,17 @@ public class Ticket {
 		this.seatName = seatName;
 	}
 
-	public Theatre getTheater() {
-		return theatre;
+	public Screen getScreen() {
+		return screen;
 	}
 
-	public void setTheatre(Theatre theatre) {
-		this.theatre = theatre;
+	public void setScreen(Screen screen) {
+		this.screen = screen;
 	}
+
+	@Override
+	public String toString() {
+		return "Ticket [id=" + id + ", noOfSeats=" + noOfSeats + ", seatName=" + seatName + ", screen=" + screen + "]";
+	}
+	
 }

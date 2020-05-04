@@ -13,7 +13,7 @@ public class Theatre {
 	private String managerContact;
 
 	public Theatre() {
-		
+
 	}
 
 	public Theatre(int id, String name, String city, List<Movie> listOfMovies, List<Screen> listOfScreens,
