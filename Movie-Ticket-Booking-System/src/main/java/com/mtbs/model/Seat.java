@@ -3,17 +3,19 @@ package com.mtbs.model;
 public class Seat {
 
 	private int id;
+	private String seatNumber;
 	private BookingState seatStatus;
-	private double price;
+	
 
 	public Seat() {
 	}
 
-	public Seat(int id, BookingState seatStatus, double price) {
+	public Seat(int id, BookingState seatStatus, String seatNumber) {
 		super();
 		this.id = id;
+		this.seatNumber=seatNumber;
 		this.seatStatus = seatStatus;
-		this.price = price;
+		
 	}
 
 	public int getId() {
@@ -32,17 +34,12 @@ public class Seat {
 		this.seatStatus = seatStatus;
 	}
 
-	public double getPrice() {
-		return price;
+	public String getSeatNumber() {
+		return seatNumber;
 	}
 
-	public void setPrice(double price) {
-		this.price = price;
-	}
-
-	@Override
-	public String toString() {
-		return "Seat [id=" + id + ", seatStatus=" + seatStatus + ", price=" + price + "]";
+	public void setSeatNumber(String seatNumber) {
+		this.seatNumber = seatNumber;
 	}
 	
 }

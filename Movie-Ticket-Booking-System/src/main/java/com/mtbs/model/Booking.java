@@ -10,21 +10,21 @@ public class Booking {
 	private LocalDate bookingDate;
 	private double totalCost;
 	private List<Seat> seatList;
-	private Ticket ticket;
-
+	private Customer customer;
+	
 	public Booking() {
 
 	}
 
-	public Booking(int id, Show show, LocalDate bookingDate, double totalCost, List<Seat> seatList,
-			Ticket ticket) {
+	public Booking(int id, Show show, LocalDate bookingDate, double totalCost, List<Seat> seatList, Customer customer) {
 		super();
 		this.id = id;
 		this.show = show;
 		this.bookingDate = bookingDate;
 		this.totalCost = totalCost;
 		this.seatList = seatList;
-		this.ticket = ticket;
+		this.customer=customer;
+		
 	}
 
 	public int getId() {
@@ -59,18 +59,18 @@ public class Booking {
 		this.seatList = seatList;
 	}
 
-	public Ticket getTicket() {
-		return ticket;
+	public Customer getCustomer() {
+		return customer;
 	}
 
-	public void setTicket(Ticket ticket) {
-		this.ticket = ticket;
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
 	}
 
 	@Override
 	public String toString() {
 		return "Booking [id=" + id + ", show=" + show + ", bookingDate=" + bookingDate + ", totalCost=" + totalCost
-				+ ", seatList=" + seatList + ", ticket=" + ticket + "]";
+				+ ", seatList=" + seatList + ", customer=" + customer + "]";
 	}
 	
 

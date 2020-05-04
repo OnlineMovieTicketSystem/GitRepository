@@ -8,22 +8,19 @@ public class Theatre {
 	private String name;
 	private String city;
 	private List<Screen> listOfScreens;
-	private String managerName;
-	private String managerContact;
+	
 
 	public Theatre() {
 
 	}
 
-	public Theatre(int id, String name, String city, List<Screen> listOfScreens,
-			String managerName, String managerContact) {
+	public Theatre(int id, String name, String city, List<Screen> listOfScreens) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.city = city;
 		this.listOfScreens = listOfScreens;
-		this.managerName = managerName;
-		this.managerContact = managerContact;
+	
 	}
 
 	public int getId() {
@@ -58,27 +55,13 @@ public class Theatre {
 		this.listOfScreens = listOfScreens;
 	}
 
-	public String getManagerName() {
-		return managerName;
-	}
-
-	public void setManagerName(String managerName) {
-		this.managerName = managerName;
-	}
-
-	public String getManagerContact() {
-		return managerContact;
-	}
-
-	public void setManagerContact(String managerContact) {
-		this.managerContact = managerContact;
-	}
-
 	@Override
 	public String toString() {
-		return "Theatre [id=" + id + ", name=" + name + ", city=" + city + ", listOfScreens=" + listOfScreens 
-				+ ", managerName=" + managerName + ", managerContact="
-				+ managerContact + "]";
+		return "Theatre [id=" + id + ", name=" + name + ", city=" + city + ", listOfScreens=" + listOfScreens + "]";
 	}
+
+	
+
+	
 
 }

@@ -8,20 +8,18 @@ public class Customer {
 	private String name;
 	private String password;
 	private LocalDate dateOfBirth;
-	private List<Ticket> tickets;
 	private String contact;
 	
 	public Customer() {
 	}
 	
-	public Customer(int id, String name, String password, LocalDate dateOfBirth, List<Ticket> tickets,
+	public Customer(int id, String name, String password, LocalDate dateOfBirth,
 			String contact) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.password = password;
 		this.dateOfBirth = dateOfBirth;
-		this.tickets = tickets;
 		this.contact = contact;
 	}
 
@@ -57,14 +55,6 @@ public class Customer {
 		this.dateOfBirth = dateOfBirth;
 	}
 
-	public List<Ticket> getTickets() {
-		return tickets;
-	}
-
-	public void setTickets(List<Ticket> tickets) {
-		this.tickets = tickets;
-	}
-
 	public String getContact() {
 		return contact;
 	}
@@ -76,8 +66,10 @@ public class Customer {
 	@Override
 	public String toString() {
 		return "Customer [id=" + id + ", name=" + name + ", password=" + password + ", dateOfBirth=" + dateOfBirth
-				+ ", tickets=" + tickets + ", contact=" + contact + "]";
+				+ ", contact=" + contact + "]";
 	}
+
+	
 	
 
 }
