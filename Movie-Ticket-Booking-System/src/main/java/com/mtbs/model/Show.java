@@ -10,12 +10,13 @@ public class Show {
 	private Movie movieName;
 	private Screen screenId;
 	private Theatre theatreId;
+	private int showPrice;
 
 	public Show() {
 	}
 
 	public Show(int id, String name, int startTime, int endTime, int availableSeats, Movie movieName, Screen screenId,
-			Theatre theatreId) {
+			Theatre theatreId, int showPrice) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -25,6 +26,7 @@ public class Show {
 		this.movieName = movieName;
 		this.screenId = screenId;
 		this.theatreId = theatreId;
+		this.showPrice=showPrice;
 	}
 
 	public int getId() {
@@ -90,12 +92,17 @@ public class Show {
 	public void setTheaterId(Theatre theatreId) {
 		this.theatreId = theatreId;
 	}
-
-	@Override
-	public String toString() {
-		return "Show [id=" + id + ", name=" + name + ", startTime=" + startTime + ", endTime=" + endTime
-				+ ", availableSeats=" + availableSeats + ", movieName=" + movieName + ", screenId=" + screenId
-				+ ", theaterId=" + theatreId + "]";
+	
+	public int getShowPrice() {
+		return showPrice;
 	}
+
+	public void setShowPrice(int showPrice) {
+		this.showPrice = showPrice;
+	}
+
+	
+
+	
 
 }
