@@ -18,8 +18,6 @@ public class City {
 		this.theatres = theatres;
 	}
 
-
-
 	public int getId() {
 		return id;
 	}
@@ -41,12 +39,9 @@ public class City {
 		return theatres;
 	}
 
-
 	public void setTheatres(List<Theatre> theatres) {
 		this.theatres = theatres;
 	}
-
-
 
 	@Override
 	public String toString() {
