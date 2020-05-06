@@ -5,7 +5,6 @@ import com.mtbs.dao.AdminRepositoryImpl;
 import com.mtbs.model.Admin;
 
 public class AdminServiceImpl implements AdminService{
-
 	@Override
 	public Admin getAdmin(int id, String password) {
 		AdminRepository adminRepoObj=new AdminRepositoryImpl();
@@ -15,5 +14,4 @@ public class AdminServiceImpl implements AdminService{
 		}
 		return null;
 	}
-
 }
