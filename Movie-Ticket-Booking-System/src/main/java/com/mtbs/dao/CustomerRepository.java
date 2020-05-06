@@ -1,5 +1,9 @@
 package com.mtbs.dao; 
 
+import
+import com.mtbs.model.Booking;
+import com.mtbs.model.Seat;
+import com.mtbs.model.Show;
 
 
 public interface CustomerRepository {
