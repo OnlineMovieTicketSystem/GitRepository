@@ -17,9 +17,9 @@ public class AdminRepositoryImpl implements AdminRepository{
 		return em.find(Admin.class, id);
 	}*/
 	@Override
-	public Admin retrieveAdmin(String name, String password) {
+	public Admin getAdmin(int id, String password) {
 		// TODO Auto-generated method stub
-		Query query = entityManager.createQuery("select * from Admin where username="+name+" and password="+password, Admin.class);
+		Query query = entityManager.createQuery("select * from Admin where username="+id+" and password="+password, Admin.class);
 		Admin admin=(Admin) query.getResultList().get(0);
 		return admin;
 	}

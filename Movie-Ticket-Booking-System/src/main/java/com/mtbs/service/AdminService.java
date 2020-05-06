@@ -1,8 +1,7 @@
-package com.mtbs.dao;
+package com.mtbs.service;
 
 import com.mtbs.model.Admin;
 
-public interface AdminRepository {
+public interface AdminService {
 	public Admin getAdmin(int id, String password);
-
 }
